@@ -27,6 +27,13 @@ echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 #
 #	multimer: This is the AlphaFold-Multimer model. To use this model, provide a multi-sequence FASTA file. In addition, the UniProt database should have been downloaded.
 #
+#
+#You can control MSA speed/quality tradeoff by adding --db_preset=reduced_dbs or --db_preset=full_dbs to the run command. We provide the following presets:
+#
+#	reduced_dbs: This preset is optimized for speed and lower hardware requirements. It runs with a reduced version of the BFD database. It requires 8 CPU cores (vCPUs), 8 GB of RAM, and 600 GB of disk space.
+#
+#	full_dbs: This runs with all genetic databases used at CASP14.
+#
 
 #User customization for input files and output directory
 #You need to provide your protein sequence in FASTA format. Each file only contains one sequence except a multi-sequence FASTA file for "multimer" model.
