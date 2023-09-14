@@ -30,3 +30,6 @@ After finishing customization of the example job script [`alphafold2_on_biomix_s
 After the job is successfully submitted, a log file named like "slurm-xxxxxx.out" will be created, please check this file for the status of your job and any error messages. You can also check the progress of your slurm job using command squeue. 
 
 [chenc@biomix alphafold2_on_biomix]$ squeue | grep chenc 
+
+### AlphaFold Output
+Once your slurm job is finished successfully, go to the OUTPUT directory you specified in your script to see AlphaFold outputs that include the computed MSAs, unrelaxed structures, relaxed structures, ranked structures, raw model outputs, prediction metadata, and section timings. Please see [official AlphaFold documentation](https://github.com/google-deepmind/alphafold#alphafold-output) for details.
