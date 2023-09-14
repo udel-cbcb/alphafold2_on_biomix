@@ -21,3 +21,12 @@ You can change your job name and add the following two SBATCH directives if you 
 The next customization is to specify your input files and output directory. You need to provide your protein sequence in FASTA format. Each file only contains one sequence except a multi-sequence FASTA file for "multimer" model.
 
 You also needs to change alphafold2 model by setting "--model_preset" parameter. Default is "monomer", but you can change it to "monomer_casp14", "monomer_ptm", or "multimer". 
+
+### Submit job to BIOMIX
+After finishing customization of the example job script [`alphafold2_on_biomix_slurm.sh`](https://github.com/chenchuming/alphafold2_on_biomix/blob/main/alphafold2_on_biomix_slurm.sh) to fit your needs, you can submit job to BIOMIX:
+
+[chenc@biomix alphafold2_on_biomix]$ sbatch alphafold2_on_biomix_slurm.sh
+
+After the job is successfully submitted, a log file named like "slurm-xxxxxx.out" will be created, please check this file for the status of your job and any error messages. You can also check the progress of your slurm job using command squeue. 
+
+[chenc@biomix alphafold2_on_biomix]$ squeue | grep chenc 
