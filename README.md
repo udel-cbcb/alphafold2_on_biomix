@@ -1,4 +1,4 @@
-# AlphaFold2 on BIOMIX HPC Cluster_
+# AlphaFold2 on BIOMIX HPC Cluster
 This repository hosts information about running AlphaFold2 on [BIOMIX HPC cluster](https://bioit.dbi.udel.edu/BIOMIX/BIOMIX-cluster.html) using singularity.
 
 We have installed [AlphaFold2](https://github.com/google-deepmind/alphafold) on BIOMIX HPC Cluster based on [alphafold_singularity](https://github.com/prehensilecode/alphafold_singularity).
