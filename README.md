@@ -32,4 +32,4 @@ After the job is successfully submitted, a log file named like "slurm-xxxxxx.out
 [chenc@biomix alphafold2_on_biomix]$ squeue | grep chenc 
 
 ### AlphaFold Output
-Once your slurm job is finished successfully, go to the OUTPUT directory you specified in your script to see AlphaFold outputs that include the computed MSAs, unrelaxed structures, relaxed structures, ranked structures, raw model outputs, prediction metadata, and section timings. Please see [official AlphaFold documentation](https://github.com/google-deepmind/alphafold#alphafold-output) for details.
+Once your slurm job is finished successfully, go to the OUTPUT directory you specified in your slurm script to see AlphaFold outputs that include the computed MSAs, unrelaxed structures, relaxed structures, ranked structures, raw model outputs, prediction metadata, and section timings. Please see [official AlphaFold documentation](https://github.com/google-deepmind/alphafold#alphafold-output) for details.
