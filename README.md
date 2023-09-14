@@ -1,9 +1,9 @@
-# alphafold2_singularity_on_biomix
+# AlphaFold2 on BIOMIX HPC Cluster_
 This repository hosts information about running AlphaFold2 on [BIOMIX HPC cluster](https://bioit.dbi.udel.edu/BIOMIX/BIOMIX-cluster.html) using singularity.
 
 We have installed [AlphaFold2](https://github.com/google-deepmind/alphafold) on BIOMIX HPC Cluster based on [alphafold_singularity](https://github.com/prehensilecode/alphafold_singularity).
 
-## Run as a Slurm job on BIOMIX HPC cluster
+## Run as a Slurm job on BIOMIX 
 See the example job script [`alphafold2_on_biomix_slurm.sh`](https://github.com/chenchuming/alphafold2_on_biomix/blob/main/alphafold2_on_biomix_slurm.sh).
 
 Note: this example script must be modified to suit your specific needs. Only change the section mentioned below in the example slurm script.
