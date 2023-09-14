@@ -28,7 +28,7 @@ echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 #	multimer: This is the AlphaFold-Multimer model. To use this model, provide a multi-sequence FASTA file. In addition, the UniProt database should have been downloaded.
 #
 
-#User customiazation for input files and output directories
+#User customization for input files and output directory
 #You need to provide your protein sequence in FASTA format. Each file only contains one sequence except a multi-sequence FASTA file for "multimer" model.
 #OUTPUT=/home/chenc/alphafold_output
 #INPUT=/home/chenc/alphafold_input/*.fasta
