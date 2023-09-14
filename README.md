@@ -9,7 +9,7 @@ See the example job script [`alphafold2_on_biomix_slurm.sh`](https://github.com/
 Note: this example script must be modified to suit your specific needs. Only change the section mentioned below in the example slurm script.
 
 ### Customization for slurm enviroment
-You can change your job name and add the following two SBATCH directives if you want to receive email notification of your job run status 
+You can change your job name and add the following two SBATCH directives if you want to receive email notification of your job run status.
 
 #SBATCH --job-name=afolds
 
