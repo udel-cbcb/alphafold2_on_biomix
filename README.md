@@ -11,6 +11,7 @@ Note: this example script must be modified to suit your specific needs. Only cha
 ### Customization for slurm enviroment
 You can add the following two SBATCH directives if you want to receive email notification of your job run status 
 #SBATCH --mail-user=youremail@university.edu
+
 #SBATCH --mail-type=ALL
 
 ### Customization for input, output, and Alphafold2 model 
