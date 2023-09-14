@@ -4,7 +4,7 @@ This repository hosts information about running AlphaFold2 on [BIOMIX HPC cluste
 We have installed [AlphaFold2](https://github.com/google-deepmind/alphafold) on BIOMIX HPC Cluster based on [alphafold_singularity](https://github.com/prehensilecode/alphafold_singularity).
 
 ## Run as a Slurm job on BIOMIX 
-See the example job script [`alphafold2_on_biomix_slurm.sh`](https://github.com/chenchuming/alphafold2_on_biomix/blob/main/alphafold2_on_biomix_slurm.sh).
+See the example job script [`alphafold2_on_biomix_slurm.sh`](https://github.com/udel-cbcb/alphafold2_on_biomix/blob/main/alphafold2_on_biomix_slurm.sh).
 
 Note: this example script must be modified to suit your specific needs. Only change the section mentioned below in the example slurm script.
 
@@ -23,7 +23,7 @@ The next customization is to specify your input files and output directory. You 
 You also needs to change alphafold2 model by setting "--model_preset" parameter. Default is "monomer", but you can change it to "monomer_casp14", "monomer_ptm", or "multimer". 
 
 ### Submit job to BIOMIX
-After finishing customization of the example job script [`alphafold2_on_biomix_slurm.sh`](https://github.com/chenchuming/alphafold2_on_biomix/blob/main/alphafold2_on_biomix_slurm.sh) to fit your needs, you can submit job to BIOMIX:
+After finishing customization of the example job script [`alphafold2_on_biomix_slurm.sh`](https://github.com/udel-cbcb/alphafold2_on_biomix/blob/main/alphafold2_on_biomix_slurm.sh) to fit your needs, you can submit job to BIOMIX:
 
 [chenc@biomix alphafold2_on_biomix]$ sbatch alphafold2_on_biomix_slurm.sh
 
