@@ -17,7 +17,8 @@ export TMPDIR=/scratch/tmp
 echo ALPHAFOLD_DIR=$ALPHAFOLD_DIR
 echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 
-#You can control which AlphaFold model to run by adding the --model_preset= flag. Alphafold provides the following models:
+#You can control which AlphaFold model to run by adding the --model_preset= flag. 
+#AlphaFold provides the following models:
 #
 #	monomer: This is the original model used at CASP14 with no ensembling.
 #
@@ -25,7 +26,7 @@ echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 #
 #	monomer_ptm: This is the original CASP14 model fine tuned with the pTM head, providing a pairwise confidence measure. It is slightly less accurate than the normal monomer model.
 #
-#	multimer: This is the AlphaFold-Multimer model. To use this model, provide a multi-sequence FASTA file. In addition, the UniProt database should have been downloaded.
+#	multimer: This is the AlphaFold-Multimer model. To use this model, provide a multi-sequence FASTA file.
 #
 #
 #You can control MSA speed/quality tradeoff by adding --db_preset=reduced_dbs or --db_preset=full_dbs to the run command. We provide the following presets:
