@@ -64,7 +64,7 @@ input_file_extension="${filename##*.}"
 input_filename="${filename%.*}"
 
 # This will create "coverage_LDDT.png" and "PAE.png" plots  
-/usr/bin/python3 ${ALPHAFOLD_DIR}/visualize_alphafold_results.py --input_dir $TMPDIR/${input_filename}
+#/usr/bin/python3 ${ALPHAFOLD_DIR}/visualize_alphafold_results.py --input_dir $TMPDIR/${input_filename}
 
 cp -rp $TMPDIR/${input_filename} ${OUTPUT}
 rm -rf $TMPDIR/*
