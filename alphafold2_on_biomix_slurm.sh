@@ -54,7 +54,7 @@ filename=$(basename -- "$file")
     --fasta_paths=${file} \
     --max_template_date=2022-01-01 \
     --output_dir=${OUTPUT} \
-    --model_preset=monomer \
+    --model_preset=monomer_ptm \
     --db_preset=full_dbs
 
 echo INFO: AlphaFold returned $?
