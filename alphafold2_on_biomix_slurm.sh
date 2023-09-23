@@ -59,6 +59,10 @@ filename=$(basename -- "$file")
     --model_preset=monomer_ptm \
     --db_preset=full_dbs
 
+# If you want to use more command line flags, please refer to the links below for details: 
+# https://github.com/udel-cbcb/alphafold2_on_biomix#alphafold-command-flags-short-version
+# https://github.com/udel-cbcb/alphafold2_on_biomix#alphafold-command-flags-full-version
+#
 echo INFO: AlphaFold returned $?
 
 ### Copy Alphafold output back to directory where "sbatch" command was issued.
