@@ -28,6 +28,8 @@ echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 #
 #	multimer: This is the AlphaFold-Multimer model. To use this model, provide a multi-sequence FASTA file.
 #
+#	Note: if you want predicted alignment error plot (PAE), please DO NOT use "monomer" and "monomer_casp14" models
+#
 #
 #You can control MSA speed/quality tradeoff by adding --db_preset=reduced_dbs or --db_preset=full_dbs to the run command. We provide the following presets:
 #
