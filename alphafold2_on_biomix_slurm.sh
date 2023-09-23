@@ -28,7 +28,7 @@ echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 #
 #	multimer: This is the AlphaFold-Multimer model. To use this model, provide a multi-sequence FASTA file.
 #
-#	Note: if you want predicted alignment error plot (PAE), please DO NOT use "monomer" and "monomer_casp14" models
+#	Note: if you want predicted alignment error plot (PAE), please DO NOT use "monomer" models
 #
 #
 #You can control MSA speed/quality tradeoff by adding --db_preset=reduced_dbs or --db_preset=full_dbs to the run command. We provide the following presets:
@@ -65,8 +65,8 @@ echo INFO: AlphaFold returned $?
 input_file_extension="${filename##*.}"
 input_filename="${filename%.*}"
 
-# This will create "coverage_LDDT.png" and "PAE.png" plots if you select "monomer_ptm" or "multimer" which generates predicted alignment error.
-# If you run "monomer" or "monomer_casp14" model, please comment out the line below.
+# This will create "coverage_LDDT.png" and "PAE.png" plots if you select "monomer_ptm", "mononmer_casp14" or "multimer" which generates predicted alignment error.
+# If you run "monomer" model, please comment out the line below.
 /usr/bin/python3 ${ALPHAFOLD_DIR}/visualize_alphafold_results.py --input_dir $TMPDIR/${input_filename}
 
 cp -rp $TMPDIR/${input_filename} ${OUTPUT}
