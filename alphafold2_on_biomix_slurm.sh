@@ -2,7 +2,7 @@
 #SBATCH --job-name=afolds
 #SBATCH --partition=gpu2
 #SBATCH --account=gpu2
-#SBATCH --mem=250G
+#SBATCH --mem=150G
 #SBATCH --time=30-00:00
 
 ### NOTE
