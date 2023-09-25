@@ -45,6 +45,12 @@ echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 OUTPUT=
 INPUT=
 
+#This is to set up temporary working directory.
+CWD=$TMPDIR/$USER
+if [[ ! -e $CWD ]]; then
+    mkdir -p $CWD
+fi
+export TMPDIR=$CWD
 
 for file in $INPUT
 do
