@@ -17,6 +17,13 @@ export TMPDIR=/scratch/tmp
 echo ALPHAFOLD_DIR=$ALPHAFOLD_DIR
 echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 
+#This is to set up temporary working directory.
+CWD=$TMPDIR/$USER
+if [[ ! -e $CWD ]]; then
+    mkdir -p $CWD
+fi
+export TMPDIR=$CWD
+
 #You can control which AlphaFold model to run by adding the --model_preset= flag. 
 #AlphaFold provides the following models:
 #
@@ -45,12 +52,6 @@ echo ALPHAFOLD_DATADIR=$ALPHAFOLD_DATADIR
 OUTPUT=
 INPUT=
 
-#This is to set up temporary working directory.
-CWD=$TMPDIR/$USER
-if [[ ! -e $CWD ]]; then
-    mkdir -p $CWD
-fi
-export TMPDIR=$CWD
 
 for file in $INPUT
 do
