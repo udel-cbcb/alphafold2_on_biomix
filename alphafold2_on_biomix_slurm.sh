@@ -80,6 +80,6 @@ input_filename="${filename%.*}"
 /usr/bin/python3 ${ALPHAFOLD_DIR}/visualize_alphafold_results.py --input_dir $TMPDIR/${input_filename}
 
 cp -rp $TMPDIR/${input_filename} ${OUTPUT}
-rm -rf $TMPDIR/*
+rm -rf $TMPDIR
 
 done
